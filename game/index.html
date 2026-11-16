@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emberfall — Ashes of the Last Lantern</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #05060f;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  canvas {
+    width: min(96vw, 960px);
+    height: auto;
+    aspect-ratio: 960 / 600;
+    display: block;
+    background: #0b0d1f;
+    border-radius: 8px;
+    cursor: crosshair;
+  }
+  #selftest {
+    position: fixed;
+    left: 8px;
+    top: 8px;
+    color: #f2ead8;
+    font: 13px monospace;
+    white-space: pre;
+    z-index: 10;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="600"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
